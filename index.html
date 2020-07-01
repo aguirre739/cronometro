@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aguirre Pamela">
+    <meta name="description" content="Un cronometro utilizando los conocimientos de BOM y DOM">
+    <meta name="keywords" content="cronometro, dom, bom, javascript">
+    <title>Cronometro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://allfont.es/allfont.css?fonts=ds-digital-bold" rel="stylesheet" type="text/css" />
+    <link href="https://allfont.es/allfont.css?fonts=ds-digital" rel="stylesheet" type="text/css" />    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/34fc8d25de.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Image and text -->
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/cronometro.svg" width="30" height="30"
+                        class="d-inline-block align-center" alt="" loading="lazy">
+                    Cronometro
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="container d-flex justify-content-center">
+        <section class="m-5 p-5 rounded-circle circulo">
+            <div class="d-flex justify-content-center my-2 fecha">
+                <p id="dia">30</p>
+                <p>-</p>
+                <p id="mes">06</p>
+                <p>-</p>
+                <p id="anio">2020</p>
+            </div>
+            <div class="d-flex justify-content-center cronometro display">
+                <p>00</p>
+                <p>:</p>
+                <p>00</p>
+                <p>:</p>
+                <p>00</p>
+            </div>
+            <div class="d-flex justify-content-center my-2">
+                <button class="btn botonPlay mx-2 px-2"><i class="fas fa-play fa-2x text-white"></i></button>
+                <button class="btn botonPause mx-2 px-2"><i class="fas fa-pause fa-2x text-white"></i></button>
+                <button class="btn botonStop mx-2 px-2"><i class="fas fa-stop fa-2x text-white"></i></button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark">
+        <div class="container text-white text-center py-2">
+            <p class="h1">Aguirre,Rosa Pamela</p>
+            <p>&copy;Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cronometro.js"></script>
+</body>
+
+</html>

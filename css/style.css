@@ -1,0 +1,36 @@
+.cronometro{
+    font-family: 'DS-Digital Bold', arial;
+    font-size: 70px;
+}
+
+.fecha{
+    font-family: 'DS-Digital', arial;
+    font-size: 20px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.circulo{
+    width: 400px;
+    height: 400px;
+    background-color: #283747;
+    color: white;
+    border: 15px double #85929E;
+}
+
+.display{
+    background-color: #839192;
+    color: black;
+    border: 5px inset #212F3C;
+}
+
+.botonPlay{
+    background-color: #2874A6;
+}
+
+.botonPause{
+    background-color: #229954;
+}
+
+.botonStop{
+    background-color: #A93226;
+}
