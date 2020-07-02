@@ -21,6 +21,8 @@
     background-color: #839192;
     color: black;
     border: 5px inset #212F3C;
+    height: 130px;
+    width: 270px;
 }
 
 .botonPlay{

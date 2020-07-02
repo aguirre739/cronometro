@@ -31,23 +31,25 @@
     <main class="container d-flex justify-content-center">
         <section class="m-5 p-5 rounded-circle circulo">
             <div class="d-flex justify-content-center my-2 fecha">
-                <p id="dia">30</p>
+                <p id="dia"></p>
                 <p>-</p>
-                <p id="mes">06</p>
+                <p id="mes"></p>
                 <p>-</p>
-                <p id="anio">2020</p>
+                <p id="anio"></p>
             </div>
             <div class="d-flex justify-content-center cronometro display">
-                <p>00</p>
+                <!-- <p id="horas">00</p>
+                <p>:</p> -->
+                <p id="minutos">00</p>
                 <p>:</p>
-                <p>00</p>
+                <p id="segundos">00</p>
                 <p>:</p>
-                <p>00</p>
+                <p id="centesimas">00</p>
             </div>
             <div class="d-flex justify-content-center my-2">
-                <button class="btn botonPlay mx-2 px-2"><i class="fas fa-play fa-2x text-white"></i></button>
-                <button class="btn botonPause mx-2 px-2"><i class="fas fa-pause fa-2x text-white"></i></button>
-                <button class="btn botonStop mx-2 px-2"><i class="fas fa-stop fa-2x text-white"></i></button>
+                <button class="btn botonPlay mx-2 px-2" id="btnPlay" onclick="iniciar()"><i class="fas fa-play fa-2x text-white"></i></button>
+                <button class="btn botonPause mx-2 px-2" onclick="resetear()"><i class="fas fa-undo fa-2x text-white"></i></button>
+                <button class="btn botonStop mx-2 px-2" onclick="parar()"><i class="fas fa-stop fa-2x text-white"></i></button>
             </div>
         </section>
     </main>
