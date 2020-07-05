@@ -14,7 +14,7 @@ function obtenerFecha(){
     }
 
     if(fecha.getMonth() <10){
-        dMes.innerText = "0" + fecha.getMonth();
+        dMes.innerText = "0" + (fecha.getMonth()+1);
     } else {
         dMes.innerText = fecha.getMonth();
     }
@@ -50,15 +50,14 @@ function cronometro(){
     let tiempoActual = new Date();
     contador = tiempoActual - tiempoInicial;
     let acTiempo = new Date();
-    acTiempo.setTime(contador);
+    let contador2 = acTiempo.setTime(contador);
     centesimas = acTiempo.getMilliseconds();
     centesimas = centesimas/10;
     centesimas = Math.round(centesimas);
+    // mostrar por pantalla
     dCentesimas.innerText = centesimas;
-    // console.log("centimas"+dCentesimas);
     segundos = acTiempo.getSeconds();
     dSegundos.innerText = segundos;
-    // console.log(dSegundos);
     minutos = acTiempo.getMinutes();
     dMinutos.innerText = minutos;
     if(centesimas<10){
