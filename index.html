@@ -9,8 +9,10 @@
     <meta name="keywords" content="cronometro, dom, bom, javascript">
     <title>Cronometro</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="fonts/ds-digital_[allfont.es].ttf">
-    <link rel="stylesheet" href="fonts/ds-digital-bold_[allfont.es].ttf">    
+    <link rel="stylesheet" href="fonts/ds-digital.ttf" type="text/css">
+    <link rel="stylesheet" href="fonts/ds-digital-bold.ttf" type="text/css">
+    <link href="https://allfont.es/allfont.css?fonts=ds-digital-bold" rel="stylesheet" type="text/css" />
+    <link href="https://allfont.es/allfont.css?fonts=ds-digital" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/34fc8d25de.js" crossorigin="anonymous"></script>
 </head>
@@ -20,9 +22,9 @@
         <!-- Image and text -->
         <nav class="navbar navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="img/cronometro.svg" width="30" height="30"
-                        class="d-inline-block align-center" alt="" loading="lazy">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/cronometro.svg" width="30" height="30" class="d-inline-block align-center" alt="grafico cronometro"
+                        loading="lazy">
                     Cronometro
                 </a>
             </div>
@@ -47,10 +49,16 @@
                 <p id="centesimas">00</p>
             </div>
             <div class="d-flex justify-content-center my-2">
-                <button class="btn botonPlay mx-2 px-2" id="btnPlay" onclick="iniciar()"><i class="fas fa-play fa-2x text-white"></i></button>
-                <button class="btn botonContinue mx-2 px-2" onclick="reanudar()"><i class="fas fa-step-forward fa-2x text-white"></i></button>
-                <button class="btn botonPause mx-2 px-2" onclick="resetear()"><i class="fas fa-undo fa-2x text-white"></i></button>
-                <button class="btn botonStop mx-2 px-2" onclick="parar()"><i class="fas fa-stop fa-2x text-white"></i></button>
+                <div class="row">
+                    <button class="btn botonPlay mx-2 px-2 icono" id="btnPlay" onclick="iniciar()"><i
+                            class="fas fa-play fa-2x text-white texto"></i></button>
+                    <button class="btn botonContinue mx-2 px-2 icono" onclick="reanudar()"><i
+                            class="fas fa-step-forward fa-2x text-white texto"></i></button>
+                    <button class="btn botonPause mx-2 px-2 icono" onclick="resetear()"><i
+                            class="fas fa-undo fa-2x text-white texto"></i></button>
+                    <button class="btn botonStop mx-2 px-2 icono" onclick="parar()"><i
+                            class="fas fa-stop fa-2x text-white texto"></i></button>
+                </div>
             </div>
         </section>
     </main>

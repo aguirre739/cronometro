@@ -40,3 +40,114 @@
 .botonContinue{
     background-color: #884EA0;
 }
+
+@media (max-width: 575.98px) {
+    .cronometro{
+        font-size: 20px;
+    }
+    .fecha{
+        font-size: 10px;
+        text-shadow: 1px 1px 1px #aaa;
+        margin: 0px;
+    }
+    .circulo{
+        width: 200px;
+        height: 200px;
+        border: 5px double #85929E;
+        margin: 1rem!important;
+        padding: 1rem!important;
+        display: flex;
+        flex-direction: column;
+        align-items: center!important;
+        justify-content: center;
+        
+    }
+    .display{
+        border: 1px inset #212F3C;
+        height: 50px;
+        width: 100px;
+    }
+    
+    .icono{
+        width: 25px;
+        height: 25px;
+        padding-top: 0px!important;
+        padding-bottom: 0px!important;
+        padding-left: 2px!important;
+        padding-right: 2px!important;
+        margin-left: 4px!important;
+        margin-right: 4px!important;
+        font-size: 1rem;
+    }
+    .texto{
+        font-size: 1em!important;
+    }
+    .circulo p{
+        margin-bottom: 0rem!important;
+    }
+    footer .h1{
+        font-size: 2rem!important;
+    }
+    footer{
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .cronometro{
+        font-size: 30px;
+    }
+    .fecha{
+        font-size: 20px;
+        text-shadow: 2px 2px 2px #aaa;
+        margin: 0px;
+    }
+    .circulo{
+        width: 300px;
+        height: 300px;
+        border: 10px double #85929E;
+        margin: 1rem!important;
+        padding: 1rem!important;
+        display: flex;
+        flex-direction: column;
+        align-items: center!important;
+        justify-content: center;
+        
+    }
+    .display{
+        border: 2px inset #212F3C;
+        height: 70px;
+        width: 150px;
+    }
+    
+    .icono{
+        width: 35px;
+        height: 35px;
+        padding-top: 0px!important;
+        padding-bottom: 0px!important;
+        padding-left: 2px!important;
+        padding-right: 2px!important;
+        margin-left: 4px!important;
+        margin-right: 4px!important;
+        font-size: 1rem;
+    }
+    .texto{
+        font-size: 1em!important;
+    }
+    .circulo p{
+        margin-bottom: 0rem!important;
+    }
+    footer .h1{
+        font-size: 2rem!important;
+    }
+    footer{
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+    }
+}
+
